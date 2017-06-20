@@ -60,13 +60,8 @@ public class MainScr : MonoBehaviour {
 	}
 	public void ClickArrow()
 	{
-		if(TextAdressShow == true) {
-			AdressMusic.gameObject.SetActive(false);
-			TextAdressShow = false;
-		}else{
-			AdressMusic.gameObject.SetActive(true);
-			TextAdressShow = true;
-		}
+		TextAdressShow = !TextAdressShow;
+		AdressMusic.gameObject.SetActive(TextAdressShow);
 	}
 	public void ClickGoButton()
 	{
